@@ -1,67 +1,13 @@
-.projectOver, .step1Title, .step2Title, .step3Title, .step4Title, .step5Title, .step6Title {
-    color: #bec0c2;
-    position: relative;
-    margin: 15px 5px;
-    width: max-content;
-    white-space: normal;
-    word-break: break-word;
-    max-width: 100%;
-}
-.projectOver:hover, .step1Title:hover, .step2Title:hover, .step3Title:hover, .step4Title:hover,
-.step5Title:hover, .step6Title:hover {
-    color: #dedfe0;
-}
-.projectOver::before, .step1Title::before, .step2Title::before, .step3Title::before,
-.step4Title::before, .step5Title::before, .step6Title::before {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background-color: #bec0c2;
-}
-.projectOver:hover::before, .step1Title:hover::before, .step2Title:hover::before, .step3Title:hover::before,
-.step4Title:hover::before, .step5Title:hover::before, .step6Title:hover::before {
+.card img, .container2 img {
+    display: block;
     width: 100%;
-    transition: all .5s;
-}
-
-.overview{
-    margin: 10px 20px;
-    border: 2px solid #747474;
-    background: linear-gradient(135deg, rgba(94, 94, 94, 0.1),  rgb(94, 94, 94, 0));
-    backdrop-filter: blur(10px);
-    padding: 10px;
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 10px #ababab;
-    transition-duration: 0.3s;
-}
-.discrip{
-    border: 2px solid #747474;
-    background: linear-gradient(135deg, rgba(94, 94, 94, 0.1),  rgb(94, 94, 94, 0));
-    backdrop-filter: blur(10px);
-    padding: 10px;
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 10px #ababab;
-    transition-duration: 0.3s;
-}
-.discrip:hover {
-    box-shadow: 0 0 20px #ababab;
-    -webkit-transform: scale(1.002);
-    transform: scale(1.002);
-}
-.step1 {
-    background: #5e5e5e;
-    margin: 10px 20px;
+    height: auto;
+    max-width: 70vw;
+    max-height: 90vh;
+    background: linear-gradient(135deg, rgba(132, 132, 132, 0.1),  rgba(68, 68, 68, 0));
+    margin: 20px auto;
     padding: 20px;
-    margin: 10px 20px;
     border: 2px solid #747474;
-    background: linear-gradient(135deg, rgba(94, 94, 94, 0.1),  rgb(94, 94, 94, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 8px;
@@ -69,7 +15,7 @@
     box-shadow: 0 0 10px #ababab;
     transition-duration: 0.3s;
 }
-.list, ul, .finishWork{
+.list{
     font-size: clamp(1.20rem, 2vw, 1.20rem);
     border: 2px solid #747474;
     background: linear-gradient(135deg, rgba(94, 94, 94, 0.1),  rgb(94, 94, 94, 0));
@@ -82,30 +28,32 @@
     transition-duration: 0.3s;
 }
 li {
+    margin: 10px;
+    border-radius: 4px;
     transition: transform 0.2s ease;
   }
   
   li:hover {
-    transform: translateX(10px);
+    transform: translateX(20px);
   }
 li::marker{
-    color: #cdd1eb;
+    color: #dedfe0;
     font-size: clamp(0.8rem, 1.5vw, 1.4rem);
 }
-.list:hover, ul:hover, .raw_data:hover, .Normalized:hover, .model:hover{
+ul:hover {
     box-shadow: 0 0 20px #ababab;
     -webkit-transform: scale(1.002);
     transform: scale(1.002);
 }
-
-
-
-
-.step2 {
+li:hover {
+    box-shadow: 0 0 20px #ababab;
+    transform: translateX(10px);
+}
+.card, .finishWork, .container2, .container{
     background: #5e5e5e;
-    margin: 10px 20px;
+    font-size: 28px;
+    margin: max-content;
     padding: 20px;
-    margin: 10px 20px;
     border: 2px solid #747474;
     background: linear-gradient(135deg, rgba(94, 94, 94, 0.1),  rgb(94, 94, 94, 0));
     backdrop-filter: blur(10px);
@@ -114,114 +62,8 @@ li::marker{
     cursor: pointer;
     box-shadow: 0 0 10px #ababab;
     transition-duration: 0.3s;
+    margin-top: 30px;
 }
-.step3{
-
-    background: #5e5e5e;
-    margin: 10px 20px;
-    padding: 20px auto;
-    background: #5e5e5e;
-    margin: 10px 20px;
-    padding: 20px;
-    margin: 10px 20px;
-    border: 2px solid #747474;
-    background: linear-gradient(135deg, rgba(94, 94, 94, 0.1),  rgb(114, 114, 114, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 10px #ababab;
-    transition-duration: 0.3s;
-}
-.raw_data {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 70vw;
-    max-height: 90vh;
-    background: linear-gradient(135deg, rgba(132, 132, 132, 0.1),  rgba(68, 68, 68, 0));
-    margin: 20px auto;
-    padding: 20px;
-    border: 2px solid #747474;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 10px #ababab;
-    transition-duration: 0.3s;
-}
-.step4 {
-    background: #5e5e5e;
-    margin: 10px 20px;
-    padding: 20px;
-    margin: 10px 20px;
-    border: 2px solid #747474;
-    background: linear-gradient(135deg, rgba(94, 94, 94, 0.1),  rgb(114, 114, 114, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 10px #ababab;
-    transition-duration: 0.3s;
-}
-.Normalized {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 70vw;
-    max-height: 90vh;
-    margin: 20px auto;
-    background: #444444;
-    background: linear-gradient(135deg, rgba(132, 132, 132, 0.1),  rgba(68, 68, 68, 0));
-    padding: 20px;
-    border: 2px solid #747474;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 10px #ababab;
-    transition-duration: 0.3s;
-}
-
-
-
-.datamodel {
-    background: #5e5e5e;
-    margin: 10px 20px;
-    padding: 20px;
-    border: 2px solid #747474;
-    background: linear-gradient(135deg, rgba(94, 94, 94, 0.1),  rgb(114, 114, 114, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 10px #ababab;
-    transition-duration: 0.3s;
-}
-.model {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 70vw;
-    max-height: 90vh;
-    margin-top: 20px;
-    background: #444444;
-    margin: 20px auto;
-    padding: 20px;
-    background: #444444;
-    background: linear-gradient(135deg, rgba(132, 132, 132, 0.1),  rgba(68, 68, 68, 0));
-    padding: 20px;
-    border: 2px solid #747474;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 10px #ababab;
-    transition-duration: 0.3s;
-}
-
-
-.finishWork{
-    margin: 10px 20px;
-    padding: 20px;
+.card h1 , .container2 h1{
+    font-size: 20px;
 }
