@@ -1,0 +1,164 @@
+body {
+    padding-top: 60px;
+    background-color: #0b1215;
+    
+}   
+
+.title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(244, 244, 244);
+    font-family: poppins;
+    font-size: clamp(1.25rem, 2vw, 2.2rem);
+}
+.title p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(244, 244, 244);
+    font-family: poppins;
+    font-size: clamp(1.25rem, 2vw, 18px);
+}
+.container, .finishWork, .container2, .container1{
+    display: flex;
+    flex-direction: column;
+    color: rgb(244, 244, 244);
+    font-family: poppins;
+    font-size: clamp(1.25rem, 2vw, 20px);
+    margin: 30px auto;
+    
+}
+a {
+    text-decoration: none;
+    color: rgb(244, 244, 244);
+}
+
+@media (max-width: 320px) {
+    .Title, .card h1, .step2Title,.step2_1Title, .step3Title, .step4Title, .query1_title, .query2_title,
+    .quer3_title, .dependencies_title, .finishWork h1{
+        font-size: 1.2rem;
+        word-break: break-all;
+    }
+    .descrip p, .list li, li, ol {
+        font-size: .7rem;
+    }
+    img {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .list1 li {
+        font-size: 8px;
+        width: 50px;
+        padding: 0;
+    }
+    .list1 {
+        font-size: .6rem;
+        word-break: break-all;
+        padding: 0;
+    }
+    .list {
+        word-break: break-all;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: .6rem;
+    }
+    ol  {
+        padding-left: 20px;
+    }
+    .finishWork a {
+        font-size: .8rem;
+    }
+}
+@media (max-width: 430px) {
+    .Title, .card h1, .step2Title,.step2_1Title, .step3Title, .step4Title, .query1_title, .query2_title,
+    .quer3_title, .dependencies_title, .finishWork h1{
+        font-size: 1.3rem;
+        word-break: break-all;
+    }
+    .descrip p, .list li, li, ol {
+        font-size: 1rem;
+    }
+    img {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .list1 li {
+        font-size: 10px;
+        width: auto;
+        padding: 0;
+    }
+    .list1 {
+        font-size: 1rem;
+        word-break: break-all;
+        padding: 0;
+    }
+    .list {
+        word-break: break-all;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1rem;
+    }
+    ol  {
+        padding-left: 20px;
+    }
+    .finishWork a {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 430px) {
+    .card, .finishWork, .container2, .container {
+        background: linear-gradient(135deg, rgba(94, 94, 94, 0.1), rgba(94, 94, 94, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        font-size: 28px;
+        padding: 20px;
+        border: 2px solid #747474;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 0 10px #ababab;
+        transition-duration: 0.3s;
+        width: 80%;
+        max-width: 500px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+
+    .card img,  .container2 img  {
+        display: block;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ababab;
+        margin: 0 auto;
+        max-height: 70vh;
+    }
+}
+@media (max-width: 320px) {
+    .card, .finishWork, .container2, .container {
+        width: 80%;
+        max-width: 500px; /* or whatever makes sense */
+        margin: 20px auto;
+        padding: 20px;
+        background: linear-gradient(135deg, rgba(94, 94, 94, 0.1), rgba(94, 94, 94, 0));
+        border: 2px solid #747474;
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ababab;
+        transition-duration: 0.3s;
+    }
+
+    .card img,  .container2 img  {
+        width: 50%;
+        height: auto;
+        max-height: 70vh;
+        display: block;
+        margin: 10px auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ababab;
+    }
+}
